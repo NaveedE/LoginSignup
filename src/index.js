@@ -39,7 +39,7 @@ res.render("home", {
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
-  // Check for admin login
+
   if (email === "admin@example.com" && password === "admin123") {
     const allUsers = await collection.find({});
     return res.render("admin", { users: allUsers });
