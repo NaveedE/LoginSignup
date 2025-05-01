@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .home-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-container {
+  background: #fdfdfd;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.welcome-email {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.welcome-email span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="../public/login.css">
+</head>
+<body class="home-body">
+  <div class="welcome-container">
+    <h1 class="welcome-title">Welcome, {{name}}!</h1>
+    <p class="welcome-email">Your email: <span>{{email}}</span></p>
+  </div>
+</body>
+</html>
